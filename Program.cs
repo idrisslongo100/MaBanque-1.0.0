@@ -6,12 +6,13 @@ namespace MaBanque_1._0._0
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
+        
         static void Main()
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1()); // Point d'entréé de l'application
+            Application.Run(new Transaction()); // Point d'entréé de l'application
         }
     }
 }
