@@ -67,8 +67,9 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1433, 93);
+            panel1.Size = new Size(1146, 74);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -76,9 +77,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(12, 34);
+            label1.Location = new Point(10, 27);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(209, 48);
+            label1.Size = new Size(177, 41);
             label1.TabIndex = 0;
             label1.Text = "Ma banque";
             // 
@@ -90,12 +92,13 @@
             materialTextBox1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox1.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox1.LeadingIcon = null;
-            materialTextBox1.Location = new Point(27, 132);
+            materialTextBox1.Location = new Point(22, 106);
+            materialTextBox1.Margin = new Padding(2);
             materialTextBox1.MaxLength = 50;
             materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox1.Multiline = false;
             materialTextBox1.Name = "materialTextBox1";
-            materialTextBox1.Size = new Size(472, 50);
+            materialTextBox1.Size = new Size(378, 50);
             materialTextBox1.TabIndex = 2;
             materialTextBox1.Tag = "";
             materialTextBox1.Text = "";
@@ -109,12 +112,12 @@
             materialButton1.Depth = 0;
             materialButton1.HighEmphasis = true;
             materialButton1.Icon = null;
-            materialButton1.Location = new Point(517, 132);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
+            materialButton1.Location = new Point(414, 106);
+            materialButton1.Margin = new Padding(3, 5, 3, 5);
             materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton1.Name = "materialButton1";
             materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(237, 54);
+            materialButton1.Size = new Size(190, 43);
             materialButton1.TabIndex = 3;
             materialButton1.Text = "Rechercher";
             materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -130,26 +133,28 @@
             materialButton2.Depth = 0;
             materialButton2.HighEmphasis = true;
             materialButton2.Icon = null;
-            materialButton2.Location = new Point(1096, 682);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
+            materialButton2.Location = new Point(877, 546);
+            materialButton2.Margin = new Padding(3, 5, 3, 5);
             materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton2.Name = "materialButton2";
             materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(308, 44);
+            materialButton2.Size = new Size(246, 35);
             materialButton2.TabIndex = 4;
             materialButton2.Text = "Valider la transaction";
             materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton2.UseAccentColor = false;
             materialButton2.UseVisualStyleBackColor = true;
+            materialButton2.Click += materialButton2_Click;
             // 
             // flowLayoutPanel2
             // 
             flowLayoutPanel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanel2.BackColor = Color.SteelBlue;
             flowLayoutPanel2.Controls.Add(dataGridView2);
-            flowLayoutPanel2.Location = new Point(30, 545);
+            flowLayoutPanel2.Location = new Point(24, 436);
+            flowLayoutPanel2.Margin = new Padding(2);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(1377, 125);
+            flowLayoutPanel2.Size = new Size(1102, 100);
             flowLayoutPanel2.TabIndex = 2;
             // 
             // dataGridView2
@@ -157,11 +162,12 @@
             dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5 });
-            dataGridView2.Location = new Point(3, 3);
+            dataGridView2.Location = new Point(2, 2);
+            dataGridView2.Margin = new Padding(2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
             dataGridView2.RowTemplate.Height = 33;
-            dataGridView2.Size = new Size(1324, 0);
+            dataGridView2.Size = new Size(1059, 0);
             dataGridView2.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -204,9 +210,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(27, 501);
+            label2.Location = new Point(22, 401);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(273, 30);
+            label2.Size = new Size(240, 25);
             label2.TabIndex = 5;
             label2.Text = "Historique des transactions";
             // 
@@ -218,12 +225,13 @@
             materialTextBox2.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox2.Hint = "Saisir le numero de compte...";
             materialTextBox2.LeadingIcon = null;
-            materialTextBox2.Location = new Point(827, 136);
+            materialTextBox2.Location = new Point(662, 109);
+            materialTextBox2.Margin = new Padding(2);
             materialTextBox2.MaxLength = 50;
             materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox2.Multiline = false;
             materialTextBox2.Name = "materialTextBox2";
-            materialTextBox2.Size = new Size(311, 50);
+            materialTextBox2.Size = new Size(249, 50);
             materialTextBox2.TabIndex = 6;
             materialTextBox2.Tag = "";
             materialTextBox2.Text = "";
@@ -237,12 +245,12 @@
             materialButton3.Depth = 0;
             materialButton3.HighEmphasis = true;
             materialButton3.Icon = null;
-            materialButton3.Location = new Point(1167, 128);
-            materialButton3.Margin = new Padding(4, 6, 4, 6);
+            materialButton3.Location = new Point(934, 102);
+            materialButton3.Margin = new Padding(3, 5, 3, 5);
             materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             materialButton3.Name = "materialButton3";
             materialButton3.NoAccentTextColor = Color.Empty;
-            materialButton3.Size = new Size(237, 54);
+            materialButton3.Size = new Size(190, 43);
             materialButton3.TabIndex = 7;
             materialButton3.Text = "Rechercher";
             materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -257,12 +265,13 @@
             materialTextBox3.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox3.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox3.LeadingIcon = null;
-            materialTextBox3.Location = new Point(30, 252);
+            materialTextBox3.Location = new Point(24, 202);
+            materialTextBox3.Margin = new Padding(2);
             materialTextBox3.MaxLength = 50;
             materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox3.Multiline = false;
             materialTextBox3.Name = "materialTextBox3";
-            materialTextBox3.Size = new Size(329, 50);
+            materialTextBox3.Size = new Size(263, 50);
             materialTextBox3.TabIndex = 8;
             materialTextBox3.Tag = "";
             materialTextBox3.Text = "";
@@ -276,12 +285,13 @@
             materialTextBox4.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox4.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox4.LeadingIcon = null;
-            materialTextBox4.Location = new Point(27, 349);
+            materialTextBox4.Location = new Point(22, 279);
+            materialTextBox4.Margin = new Padding(2);
             materialTextBox4.MaxLength = 50;
             materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox4.Multiline = false;
             materialTextBox4.Name = "materialTextBox4";
-            materialTextBox4.Size = new Size(332, 50);
+            materialTextBox4.Size = new Size(266, 50);
             materialTextBox4.TabIndex = 9;
             materialTextBox4.Tag = "";
             materialTextBox4.Text = "";
@@ -295,12 +305,13 @@
             materialTextBox5.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox5.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox5.LeadingIcon = null;
-            materialTextBox5.Location = new Point(422, 252);
+            materialTextBox5.Location = new Point(338, 202);
+            materialTextBox5.Margin = new Padding(2);
             materialTextBox5.MaxLength = 50;
             materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox5.Multiline = false;
             materialTextBox5.Name = "materialTextBox5";
-            materialTextBox5.Size = new Size(332, 50);
+            materialTextBox5.Size = new Size(266, 50);
             materialTextBox5.TabIndex = 10;
             materialTextBox5.Tag = "";
             materialTextBox5.Text = "";
@@ -314,12 +325,13 @@
             materialTextBox6.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox6.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox6.LeadingIcon = null;
-            materialTextBox6.Location = new Point(422, 349);
+            materialTextBox6.Location = new Point(338, 279);
+            materialTextBox6.Margin = new Padding(2);
             materialTextBox6.MaxLength = 50;
             materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox6.Multiline = false;
             materialTextBox6.Name = "materialTextBox6";
-            materialTextBox6.Size = new Size(332, 50);
+            materialTextBox6.Size = new Size(266, 50);
             materialTextBox6.TabIndex = 11;
             materialTextBox6.Tag = "";
             materialTextBox6.Text = "";
@@ -333,12 +345,13 @@
             materialTextBox7.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox7.Hint = "Saisir le matricule de l'etudiant...";
             materialTextBox7.LeadingIcon = null;
-            materialTextBox7.Location = new Point(836, 252);
+            materialTextBox7.Location = new Point(669, 202);
+            materialTextBox7.Margin = new Padding(2);
             materialTextBox7.MaxLength = 50;
             materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
             materialTextBox7.Multiline = false;
             materialTextBox7.Name = "materialTextBox7";
-            materialTextBox7.Size = new Size(568, 50);
+            materialTextBox7.Size = new Size(454, 50);
             materialTextBox7.TabIndex = 12;
             materialTextBox7.Tag = "";
             materialTextBox7.Text = "";
@@ -347,62 +360,69 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(29, 221);
+            label3.Location = new Point(23, 177);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(122, 25);
+            label3.Size = new Size(101, 20);
             label3.TabIndex = 14;
             label3.Text = "Nom etudiant";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(422, 221);
+            label4.Location = new Point(338, 177);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(111, 25);
+            label4.Size = new Size(92, 20);
             label4.TabIndex = 15;
             label4.Text = "Frais à payer";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(836, 211);
+            label5.Location = new Point(669, 169);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(143, 25);
+            label5.Size = new Size(118, 20);
             label5.TabIndex = 16;
             label5.Text = "Montant de frais";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(27, 315);
+            label6.Location = new Point(22, 252);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(168, 25);
+            label6.Size = new Size(139, 20);
             label6.TabIndex = 17;
             label6.Text = "Numero de compte";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(422, 319);
+            label7.Location = new Point(338, 255);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(157, 25);
+            label7.Size = new Size(131, 20);
             label7.TabIndex = 18;
             label7.Text = "Intitulé de compte";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(837, 317);
+            label8.Location = new Point(670, 254);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(101, 25);
+            label8.Size = new Size(85, 20);
             label8.TabIndex = 19;
             label8.Text = "Date valeur";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(836, 365);
+            dateTimePicker1.Location = new Point(669, 292);
+            dateTimePicker1.Margin = new Padding(2);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(568, 31);
+            dateTimePicker1.Size = new Size(455, 27);
             dateTimePicker1.TabIndex = 20;
             // 
             // materialMultiLineTextBox1
@@ -413,18 +433,19 @@
             materialMultiLineTextBox1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialMultiLineTextBox1.ForeColor = Color.FromArgb(222, 0, 0, 0);
             materialMultiLineTextBox1.Hint = "Saisir le libelle de l'operation...";
-            materialMultiLineTextBox1.Location = new Point(27, 405);
+            materialMultiLineTextBox1.Location = new Point(22, 324);
+            materialMultiLineTextBox1.Margin = new Padding(2);
             materialMultiLineTextBox1.MouseState = MaterialSkin.MouseState.HOVER;
             materialMultiLineTextBox1.Name = "materialMultiLineTextBox1";
-            materialMultiLineTextBox1.Size = new Size(1377, 73);
+            materialMultiLineTextBox1.Size = new Size(1102, 58);
             materialMultiLineTextBox1.TabIndex = 21;
             materialMultiLineTextBox1.Text = "";
             // 
             // Transaction
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1433, 740);
+            ClientSize = new Size(1146, 592);
             Controls.Add(materialMultiLineTextBox1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label8);
@@ -446,9 +467,11 @@
             Controls.Add(materialButton1);
             Controls.Add(materialTextBox1);
             Controls.Add(panel1);
+            Margin = new Padding(2);
             Name = "Transaction";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Transaction";
+            Load += Transaction_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             flowLayoutPanel2.ResumeLayout(false);
